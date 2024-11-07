@@ -1,0 +1,78 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-image: url('https://cdn.pixabay.com/photo/2022/09/21/17/02/blue-background-7470781_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 60%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#qr-code {
+    margin: 20px auto;
+}
+
+#cart-total {
+    font-size: 1.4rem;
+    margin: 20px 0;
+    font-weight: 600;
+    color: #444;
+}
+
+.pay-btn {
+    background-color: #ffd700;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pay-btn:hover {
+    background-color: #e0ac00;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #444;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+}

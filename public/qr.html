@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+    <link rel="stylesheet" href="qr.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> <!-- QRCode.js -->
+</head>
+<body>
+    <header>
+        <img src="logo-placeholder.png" alt="Store Logo">
+        <h1>Complete Your Payment</h1>
+
+    </header>
+
+    <main>
+        <div id="qr-section">
+            <h2>Pay via UPI</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeexFqzQW_gDHJw6LEvrBAm8OQopzHcTsNzg&s" alt="Payment Image" class="payment-image"> <!-- Payment Image -->
+            
+            <!-- Loading Bar -->
+            <div id="loading-bar-container">
+                <div id="loading-bar"></div>
+                <span id="loading-percentage">0%</span>
+            </div>
+
+            <!-- QR Code Container -->
+            <div id="qr-code" style="display: none;"></div>
+            
+            <p id="cart-total">Cart Total: ₹<span id="total-display"></span></p>
+            <a id="upi-payment-link" href="#">Pay via UPI</a>
+        </div>
+
+        <div id="net-banking-section">
+            <h2>Pay via Net Banking</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1680792152173-42a4572e3377?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3JlZGl0JTIwY2FyZHxlbnwwfHwwfHx8MA%3D%3D" alt="Net Banking Image" class="net-banking-image"> <!-- Net Banking Image -->
+        </div>
+
+        <button id="proceed-to-payment" class="razorpay-embed-btn">Proceed to Payment</button>
+    </main>
+
+    <footer>
+        <p>&copy; Fusion Fresh Emporium 2024  All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const totalDisplay = document.getElementById('total-display');
+            const urlParams = new URLSearchParams(window.location.search);
+            const cartTotal = urlParams.get('total');
+            
+            if (totalDisplay && cartTotal) {
+                totalDisplay.textContent = `${cartTotal}`;
+            }
+
+            // Generate UPI payment URL
+            const upiPaymentUrl = `upi://pay?pa=7989692831-@ibl&pn=Culinary Connect&am=${cartTotal}&cu=INR`;
+
+            // Update UPI payment link
+            const upiPaymentLink = document.getElementById('upi-payment-link');
+            if (upiPaymentLink) {
+                upiPaymentLink.href = upiPaymentUrl;
+            }
+
+            // QR Code Generation
+            const qrCodeElement = document.getElementById('qr-code');
+            const qrCode = new QRCode(qrCodeElement, {
+                text: upiPaymentUrl,
+                width: 200,
+                height: 200
+            });
+
+            // Handle UPI Payment Click
+            const upiPaymentLinkElement = document.getElementById('upi-payment-link');
+            upiPaymentLinkElement.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Hide QR code initially
+                qrCodeElement.style.display = 'none';
+
+                // Show the loading bar
+                const loadingBarContainer = document.getElementById('loading-bar-container');
+                const loadingBar = document.getElementById('loading-bar');
+                const loadingPercentage = document.getElementById('loading-percentage');
+                loadingBarContainer.style.display = 'block';
+
+                // Reset loading bar and percentage
+                loadingBar.style.width = '0%';
+                loadingPercentage.textContent = '0%';
+
+                // Animate loading bar over 2 seconds
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += 1;
+                    loadingBar.style.width = progress + '%';
+                    loadingPercentage.textContent = progress + '%';
+
+                    if (progress >= 100) {
+                        clearInterval(interval);
+
+                        // Hide loading bar and show QR code
+                        loadingBarContainer.style.display = 'none';
+                        qrCodeElement.style.display = 'block';
+                    }
+                }, 20); // 20ms interval for 2 seconds total (100 steps)
+            });
+
+            // Razorpay Payment Integration
+            document.getElementById('proceed-to-payment').addEventListener('click', function () {
+                // Replace this link with your Razorpay payment page link
+                const razorpayPaymentPageUrl = 'https://rzp.io/l/4Cb6Umj'; // Example link
+
+                // Redirect to Razorpay payment page
+                window.location.href = razorpayPaymentPageUrl;
+            });
+        });
+    </script>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+      document.getElementById('pay-btn').onclick = function() {
+        // Fetch the amount dynamically from your cart
+        const amount = calculateCartTotal(); // Implement this function based on your cart logic
+      };
+    </script>
+</body>
+</html>
+<p id="cart-total">Cart Total: ₹<span id="total-display">500</span></p>
+<script>
+  document.getElementById('proceed-to-payment').addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default action
+
+      // Capture the dynamic cart total (you can set this value from your app logic)
+      const cartTotal = document.getElementById('total-display').textContent;
+
+      // Initialize Razorpay options
+      var options = {
+          "key": "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay Key ID
+          "amount": cartTotal * 100, // Razorpay expects amount in paise (multiply by 100)
+          "currency": "INR",
+          "name": "Grand Luxe Interface",
+          "description": "Payment for your order",
+          "image": "logo-placeholder.png", // Optional: Add your logo URL
+          "handler": function (response) {
+              alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
+          },
+          "prefill": {
+              "name": "Customer Name",  // Optional: Prefill customer details
+              "email": "customer@example.com", // Optional: Prefill email
+              "contact": "9999999999" // Optional: Prefill contact
+          },
+          "theme": {
+              "color": "#ffd700" // Optional: Customize theme color
+          }
+      };
+
+      // Open Razorpay payment modal
+      var rzp1 = new Razorpay(options);
+      rzp1.open();
+  });
+</script>

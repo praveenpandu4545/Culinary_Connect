@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian  Recipes</title>
+    <link rel="stylesheet" href="./indian.css"> 
+    
+</head>
+<body>
+    <nav class="top-navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./help.html">Help</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./account.html">Account</a></li>
+        </ul>
+    </nav>
+    <h1>INDIAN RECIPIES</h1>
+    <h1>Veg-Starters</h1>
+    <div class="vegstarters">
+        <table>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Vegetable-Spring-Rolls-2-1.jpg" alt="Spring-Rolls">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 2.5g</p>
+                                <p>Carbohydrates: 17g</p>
+                                <p>Fats: 6g</p>
+                                <p>Calories: 100 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/-gOhyN8WJMY')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+    
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/gobimanchurian.jpg" alt="gobimanchurian">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 3g</p>
+                                <p>Carbohydrates: 21g</p>
+                                <p>Fats: 16g</p>
+                                <p>Calories: 236 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/F6Czd-2dwN0')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Hara Bara Kabab.jpg" alt="Veg-Shami">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 2.6g</p>
+                                <p>Carbohydrates: 19g</p>
+                                <p>Fats: 2.6g</p>
+                                <p>Calories: 127 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/JTWDwvm9L3Q')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Vegetable Spring Rolls</td>
+                <td>Gobimanchurian</td>
+                <td>Hara Bhara Kabab</td>
+            </tr>
+            <tr>
+                <td>200/-</td>
+                <td>160/-</td>
+                <td>220/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Vegetable Spring Rolls" data-image="./images/Vegetable-Spring-Rolls-2-1.jpg" data-price="200">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Gobimanchurian" data-image="./images/gobimanchurian.jpg" data-price="160">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Hara Bhara Kabab" data-image="./images/Hara Bara Kabab.jpg" data-price="220">Add to cart</button></td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Paneer-Tikka-Featured.jpg" alt="Panner-Tikka">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 12g</p>
+                                <p>Carbohydrates: 21g</p>
+                                <p>Fats: 15g</p>
+                                <p>Calories: 278 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/GiD9ZlG4IC8')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+     
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/chillipanner.webp" alt="chillipanner">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 15g</p>
+                                <p>Carbohydrates: 17g</p>
+                                <p>Fats: 27g</p>
+                                <p>Calories: 366 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/fPyHXiHbLg4')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Cheese-corn-balls-5.jpg" alt="Cheese-corn-balls">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 9g</p>
+                                <p>Carbohydrates: 65g</p>
+                                <p>Fats: 19g</p>
+                                <p>Calories: 570kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/-pXdls87VkU')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+    
+            </tr>
+            
+            <tr>
+                <td>Paneer Tikka</td>
+                <td>Chilli Paneer</td>
+                <td>Corn Cheese Balls</td>
+            </tr>
+            <tr>
+                <td>300/-</td>
+                <td>280/-</td>
+                <td>325/-</td>
+            </tr>
+          
+            <tr>
+                <td><button class="add-to-cart" data-name="Paneer Tikka" data-image="./images/Paneer-Tikka-Featured.jpg" data-price="300">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Chilli Paneer" data-image="./images/chillipanner.webp" data-price="280">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Corn Cheese Balls" data-image="./images/Cheese-corn-balls-5.jpg" data-price="325">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Acharipanner.webp" alt="Achari Paneer">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 11g</p>
+                                <p>Carbohydrates: 10g</p>
+                                <p>Fats: 10g</p>
+                                <p>Calories: 175 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/P514UYjzZ-E')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Crispy Chilli Potato Recipe.webp" alt="Breadpotato rolls">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 4.4g</p>
+                                <p>Carbohydrates: 47.3g</p>
+                                <p>Fats: 7.9g</p>
+                                <p>Calories: 272 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/a2RSjbpKQD0')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Mushroom Chilli.webp" alt="Mushroom Tikka">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 5g</p>
+                                <p>Carbohydrates: 26.9g</p>
+                                <p>Fats: 15.9g</p>
+                                <p>Calories: 263 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/f6CCvEV0-P8')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+            </tr>
+            <tr>
+                <td>Achari Paneer</td>
+                <td>Crispy Chilli Potato Recipe</td>
+                <td>Mushroom Chilli</td>
+            </tr>
+            <tr>
+                <td>325/-</td>
+                <td>250/-</td>
+                <td>200/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Achari Paneer" data-image="./images/Acharipanner.webp" data-price="325">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Crispy Chilli Potato Recipe" data-image="./images/Crispy Chilli Potato Recipe.webp" data-price="250">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Mushroom Chilli" data-image="./images/Mushroom Chilli.webp" data-price="200">Add to cart</button></td>
+                
+            </tr>
+            
+        </table>
+    </div>
+    <h1>Non-Veg Starters</h1>
+    <div class="starters">
+        <table>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/chicken 65.jpg" alt="Chicken 65">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 20g</p>
+                                <p>Carbohydrates: 16g</p>
+                                <p>Fats: 50g</p>
+                                <p>Calories: 260 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/_c6LkHxaSec')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/chickenlollipop.jpg" alt="chickenlollipop">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 4.5g</p>
+                                <p>Carbohydrates: 2.6g</p>
+                                <p>Fats: 6.5g</p>
+                                <p>Calories: 88 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/nQDp6-7963k')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Tandoori Chicken Strips.jpeg" alt="Afghanichickentikka">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 25g</p>
+                                <p>Carbohydrates: 8g</p>
+                                <p>Fats: 10g</p>
+                                <p>Calories: 250 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/gABgHW7BRRE')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+   
+            </tr>
+            <tr>
+                <td>Chicken 65</td>
+                <td>Chicken Lollipop</td>
+                <td>Tandoori Chicken Strips</td>
+            </tr>
+            <tr>
+                <td>220/-</td>
+                <td>250/-</td>
+                <td>200/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Chicken 65" data-image="./images/chicken 65.jpg" data-price="220">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Chicken Lollipop" data-image="./images/chickenlollipop.jpg" data-price="250">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Tandoori Chicken Strips" data-image="./images/Tandoori Chicken Strips.jpeg" data-price="200">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Butter chicken Spring Roll.jpg" alt="chickenspringroles">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 7g</p>
+                                <p>Carbohydrates: 7g</p>
+                                <p>Fats: 28g</p>
+                                <p>Calories: 280 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/YMCbwEOAJ20')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Crispy Chicken Recipe.webp" alt="dragonchicken">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 40g</p>
+                                <p>Carbohydrates: 5g</p>
+                                <p>Fats: 20g</p>
+                                <p>Calories: 370 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/Sz95JN42N6s')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Butter Garlic Chicken.webp" alt="crispyfriedchicken">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 39g</p>
+                                <p>Carbohydrates: 20g</p>
+                                <p>Fats: 5g</p>
+                                <p>Calories: 210 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/EMJdvpAu5J0')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+   
+            </tr>
+            <tr>
+                <td>Butter chicken Spring Roll</td>
+                <td>Crispy Chicken</td>
+                <td>Butter Garlic Chicken</td>
+            </tr>
+            <tr>
+                <td>300/-</td>
+                <td>350/-</td>
+                <td>350/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Butter chicken Spring Roll" data-image="./images/Butter chicken Spring Roll.jpg" data-price="300">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Crispy Chicken" data-image="./images/Crispy Chicken Recipe.webp" data-price="350">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Butter Garlic Chicken" data-image="./images/Butter Garlic Chicken.webp" data-price="350">Add to cart</button></td>
+            </tr>            
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/popcornchicken.jpg" alt="popcornchicken">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 23g</p>
+                                <p>Carbohydrates: 51g</p>
+                                <p>Fats: 17g</p>
+                                <p>Calories: 460 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/SFZOiDQ5KQQ')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+   
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Chicken Malai Tikka.jpg" alt="chickentikka">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 21.1g</p>
+                                <p>Carbohydrates: 35g</p>
+                                <p>Fats: 9g</p>
+                                <p>Calories: 180 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/DQbWcAy-Kbk')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Chicken-Seekh-Kabab.jpg" alt="chicken-seeekh-kabab">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 25g</p>
+                                <p>Carbohydrates: 8.5g</p>
+                                <p>Fats: 12g</p>
+                                <p>Calories: 234 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/BUUGpMtxutQ')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+   
+            </tr>
+            <tr>
+                <td>Popcorn Chicken</td>
+                <td>Chicken Malai Tikka</td>
+                <td>Chicken Seekh Kabab</td>
+            </tr>
+            <tr>
+                <td>220/-</td>
+                <td>300/-</td>
+                <td>460/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Popcorn Chicken" data-image="./images/popcornchicken.jpg" data-price="220">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Chicken Malai Tikka" data-image="./images/Chicken Malai Tikka.jpg" data-price="300">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Chicken Seekh Kabab" data-image="./images/Chicken-Seekh-Kabab.jpg" data-price="460">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/MuttonSeekhKabab.jpg" alt="muttonseekhkabab">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 28g</p>
+                                <p>Carbohydrates: 8.5g</p>
+                                <p>Fats: 20g</p>
+                                <p>Calories: 325 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/tVf043w3Xn4')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </td>
+   
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Prawns Koliwada.webp" alt="muttonburra">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 39g</p>
+                                <p>Carbohydrates: 18g</p>
+                                <p>Fats: 9g</p>
+                                <p>Calories: 115 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/4GA1Yp78jas')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Prawns Ghee Roast.jpg" alt="potshamikabab">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 16.5g</p>
+                                <p>Carbohydrates: 9g</p>
+                                <p>Fats: 5.2g</p>
+                                <p>Calories: 127 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/vtDjlFV3UNE')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Mutton Seekh Kabab</td>
+                <td>Prawns Koliwada</td>
+                <td>Prawns Ghee Roast</td>
+            </tr>
+            <tr>
+                <td>420/-</td>
+                <td>400/-</td>
+                <td>450/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Mutton Seekh Kabab" data-image="./images/MuttonSeekhKabab.jpg" data-price="420">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Prawns Koliwada" data-image="./images/Prawns Koliwada.webp" data-price="400">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Prawns Ghee Roast" data-image="./images/Prawns Ghee Roast.jpg" data-price="450">Add to cart</button></td>
+            </tr>
+            
+        </table>
+    </div>
+    <h1>Veg Biryanis</h1>
+    <div class="Veg-Biryanis">
+        <table>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Veg-Dum-Biryani-2.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 5g</p>
+                                <p>Carbohydrates: 35g</p>
+                                <p>Fats: 5g</p>
+                                <p>Calories: 200 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/HP2bVwNHJfM')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Paneertikkabiryani.jpeg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 13g</p>
+                                <p>Carbohydrates: 37g</p>
+                                <p>Fats: 14g</p>
+                                <p>Calories: 320 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/sDgN6SZS3rA')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Aloo Dum Biryani Recipe.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 5g</p>
+                                <p>Carbohydrates: 52g</p>
+                                <p>Fats: 18.8g</p>
+                                <p>Calories: 389 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/Je4wtd3jGSM')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Veg Dum Biryani</td>
+                <td>Panner Tikka Biryani</td>
+                <td>Aloo Dum Biryani</td>
+            </tr>
+            <tr>
+                <td>400/-</td>
+                <td>500/-</td>
+                <td>380/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Veg Dum Biryani" data-image="./images/Veg-Dum-Biryani-2.jpg" data-price="400">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Panner Tikka Biryani" data-image="./images/Paneertikkabiryani.jpeg" data-price="500">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Aloo Dum Biryani" data-image="./images/Aloo Dum Biryani Recipe.jpg" data-price="380">Add to cart</button></td>
+            </tr>
+            <tr></tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Veg-Pulao-In-Pressure-Cooker-In-20-Minutes.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 7g</p>
+                                <p>Carbohydrates: 60g</p>
+                                <p>Fats: 10g</p>
+                                <p>Calories: 250 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/nPi2GD2SqfQ')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Egg Dum Biryani Recipe.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 15g</p>
+                                <p>Carbohydrates: 40g</p>
+                                <p>Fats: 10g</p>
+                                <p>Calories: 250 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/yZavuNBAcB4')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Paneer Makhani Dum Briyani Recip.webp" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 7g</p>
+                                <p>Carbohydrates: 40g</p>
+                                <p>Fats: 4g</p>
+                                <p>Calories: 302 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/DMr1wDT9fII')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Veg Pulao</td>
+                <td>Egg Dum Biryani</td>
+                <td>Paneer MakhaniDum</td>
+            </tr>
+            <tr>
+                <td>300/-</td>
+                <td>300/-</td>
+                <td>400/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Veg Pulao" data-image="./images/Veg-Pulao-In-Pressure-Cooker-In-20-Minutes.jpg" data-price="300">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Egg Dum Biryani" data-image="./images/Egg Dum Biryani Recipe.jpg" data-price="300">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Paneer MakhaniDum" data-image="./images/Paneer Makhani Dum Briyani Recip.webp" data-price="400">Add to cart</button></td>
+            </tr>
+        </table>
+    </div>
+    <h1>Chicken Biryanis</h1>
+    <div class="Biryanis">
+        <table>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/360_F_196802485_VQxk0qmyPGTq56rKYXGikVGApD3A7v5T.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 35g</p>
+                                <p>Carbohydrates: 80g</p>
+                                <p>Fats: 30g</p>
+                                <p>Calories: 800 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/uygb9O-MDPw')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/1_UJEcivVdPN57HDMyTCW9aA.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 30g</p>
+                                <p>Carbohydrates: 60g</p>
+                                <p>Fats: 25g</p>
+                                <p>Calories: 600 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/aiDe0Ae8aVI')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/boneless.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 25g</p>
+                                <p>Carbohydrates: 30g</p>
+                                <p>Fats: 28g</p>
+                                <p>Calories: 220 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/HzDX8P9i-Bk')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Chicken Dum Biryani</td>
+                <td>Chicken Lollipop Biryani</td>
+                <td>Boneless Biryani</td>
+            </tr>
+            <tr>
+                <td>500/-</td>
+                <td>550/-</td>
+                <td>550/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Chicken Dum Biryani" data-image="./images/360_F_196802485_VQxk0qmyPGTq56rKYXGikVGApD3A7v5T.jpg" data-price="500">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Chicken Lollipop Biryani" data-image="./images/1_UJEcivVdPN57HDMyTCW9aA.jpg" data-price="550">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Boneless Biryani" data-image="./images/boneless.jpg" data-price="550">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/ChickenTikkaBiryani.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 20g</p>
+                                <p>Carbohydrates: 56g</p>
+                                <p>Fats: 10g</p>
+                                <p>Calories: 360 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/XUnvjmCLIXI')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Chicken Malai Seekh Biryani.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 30g</p>
+                                <p>Carbohydrates: 35g</p>
+                                <p>Fats: 6g</p>
+                                <p>Calories: 253 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/1I8chszgrzk')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Soya Chaap Tikka Dum Biryani.png" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 15g</p>
+                                <p>Carbohydrates: 40g</p>
+                                <p>Fats: 20g</p>
+                                <p>Calories: 320 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/bEqVYCd6q8Q')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Chicken Tikka Biryani</td>
+                <td>Chicken Malai Seekh Biryani</td>
+                <td>Soya Chaap Tikka Dum</td>
+            </tr>
+            <tr>
+                <td>600/-</td>
+                <td>550/-</td>
+                <td>400/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Chicken TikkaBiryani" data-image="./images/ChickenTikkaBiryani.jpg" data-price="600">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Chicken Malai Seekh Biryani" data-image="./images/Chicken Malai Seekh Biryani.jpg" data-price="550">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Soya Chaap Tikka Dum Biryani" data-image="./images/Soya Chaap Tikka Dum Biryani.png"data-price="400">Add to cart</button></td>
+            </tr>
+
+        </table>
+    </div>
+    <h1>Mutton Biryanis</h1>
+    <div class="MuttonBiryanis">
+        <table>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Mutton.png" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 40g</p>
+                                <p>Carbohydrates: 45g</p>
+                                <p>Fats: 20g</p>
+                                <p>Calories: 350     kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/kPRBBIqoF4o')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/awadhimutton.webp" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 38g</p>
+                                <p>Carbohydrates: 38g</p>
+                                <p>Fats: 18g</p>
+                                <p>Calories: 352 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/DSVp4qNgBno')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/kolkata mutton.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 42g</p>
+                                <p>Carbohydrates: 40g</p>
+                                <p>Fats: 22g</p>
+                                <p>Calories: 400 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/SbWGXcZTYzg')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Mutton Dum Biryani</td>
+                <td>Awadhi Mutton Biryani</td>
+                <td>Kolkata Mutton Biryani</td>
+            </tr>
+            <tr>
+                <td>680/-</td>
+                <td>700/-</td>
+                <td>750/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Mutton Dum Biryani" data-image="./images/Mutton.png" data-price="680">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Awadhi Mutton Biryani" data-image="./images/awadhimutton.webp" data-price="700">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Kolkata Mutton Biryani" data-image="./images/kolkata mutton.jpg" data-price="750">Add to cart</button></td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- The Modal -->
+<div id="videoModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeVideoModal()">&times;</span>
+        <iframe id="videoPlayer" width="100%" height="400" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<script>
+    // Function to open the video modal
+    function openVideoModal(videoUrl) {
+        const modal = document.getElementById("videoModal");
+        const videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.src = videoUrl; // Set video source
+        modal.style.display = "block"; // Show modal
+    }
+
+    // Function to close the video modal
+    function closeVideoModal() {
+        const modal = document.getElementById("videoModal");
+        const videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.src = ""; // Reset video source
+        modal.style.display = "none"; // Hide modal
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById("videoModal");
+        if (event.target == modal) {
+            closeVideoModal();
+        }
+    }
+</script>
+
+    <script src="./cart.js"></script>
+</body>
+
+</html>

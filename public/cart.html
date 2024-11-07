@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+    <script defer src="./cart.js"></script>
+</head>
+<body>
+    <nav class="top-navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./help.html">Help</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./account.html">Account</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br>
+
+    <h1>Your Cart</h1>
+    <div id="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+    </div>
+
+    <button onclick="clearCart()">Clear Cart</button>
+    <button id="place-order-button">Place Order</button>
+
+    <!-- Payment Section (initially hidden) -->
+    <div id="payment-section" style="display: none;">
+        <h2>Complete Your Payment</h2>
+
+        <!-- UPI Payment Section -->
+        <div id="upi-payment-section">
+            <h3>Pay via UPI</h3>
+            <div id="qr-code"></div>
+            <p>Scan the QR Code to complete your payment.</p>
+        </div>
+
+        <p id="cart-total">Cart Total: ₹<span id="total-display">0</span></p>
+        <button id="proceed-to-net-banking" class="pay-btn">Proceed to Net Banking</button>
+    </div>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</body>
+</html>

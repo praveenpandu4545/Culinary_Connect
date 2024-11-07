@@ -1,0 +1,194 @@
+body {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+
+td {
+    padding: 20px;
+    vertical-align: top;
+    text-align: center;
+}
+
+img {
+    width: 325px;
+    height: 350px;
+    box-shadow: 10px 10px 15px black;
+    display: block;
+    margin: 0 auto; /* Centers the image within the container */
+}
+
+button {
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.1s, transform 0.1s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    cursor: pointer; /* Shows pointer cursor on hover */
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+    perspective: 1000px; /* Perspective for 3D effect */
+    display: flex;
+    justify-content: center; /* Center the card within the table cell */
+}
+
+.card {
+    width: 325px;
+    height: 350px;
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: opacity 0.6s ease;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-back {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Navigation Bar Styling */
+.top-navbar {
+    background-color: #333;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.top-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-navbar ul li {
+    margin: 0 15px;
+}
+
+.top-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top-navbar ul li a:hover {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 700px;
+    top: 20%;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Video styling */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Button styling */
+.video-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

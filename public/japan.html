@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Recipes</title>
+    <link rel="stylesheet" href="./japan.css"> 
+    
+</head>
+<body>
+    <nav class="top-navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./help.html">Help</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./account.html">Account</a></li>
+        </ul>
+    </nav>
+    <h1>JAPANESE RECIPES</h1>
+
+    
+    <div class="popular">
+        <table>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/sushi.jpg" alt="Sushi">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 10g</p>
+                                <p>Carbohydrates: 38g</p>
+                                <p>Fats: 19g</p>
+                                <p>Calories: 349 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/joweUxpHaqc')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/yakitori.jpg" alt="Yakitori">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 19g</p>
+                                <p>Carbohydrates: 70g</p>
+                                <p>Fats: 8g</p>
+                                <p>Calories: 440 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/3woUacOV5KQ')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Okonomiyaki.jpg" alt="Okonomiyaki">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 39g</p>
+                                <p>Carbohydrates: 64g</p>
+                                <p>Fats: 28g</p>
+                                <p>Calories: 666 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/Y33iFBt1_PA')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+            </tr>
+            <tr>
+                <td>Sushi</td>
+                <td>Yakitori</td>
+                <td>Okonomiyaki</td>
+            </tr>
+            <tr>
+                <td>899/-</td>
+                <td>850/-</td>
+                <td>800/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Sushi" data-image="./images/sushi.jpg" data-price="899">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Yakitori" data-image="./images/yakitori.jpg" data-price="850">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Okonomiyaki" data-image="./images/Okonomiyaki.jpg" data-price="800">Add to cart</button></td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Miso soup.webp" alt="Miso soup">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 5.8g</p>
+                                <p>Carbohydrates: 3.5g</p>
+                                <p>Fats: 3g</p>
+                                <p>Calories: 59 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/hJ5-UmLCdvs')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+   
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Onigiri-23.jpg" alt="Onigiri">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 8.9g</p>
+                                <p>Carbohydrates: 30g</p>
+                                <p>Fats: 7.8g</p>
+                                <p>Calories: 232 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/hjfPFK4bCog')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Udon.jpg" alt="Udon">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 7.3g</p>
+                                <p>Carbohydrates: 42g</p>
+                                <p>Fats: 1g</p>
+                                <p>Calories: 220 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/c_waS4o02NA')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            
+            <tr>
+                <td>Miso soup</td>
+                <td>Onigiri</td>
+                <td>Udon</td>
+            </tr>
+            <tr>
+                <td>450/-</td>
+                <td>550/-</td>
+                <td>500/-</td>
+            </tr>
+          
+            <tr>
+                <td><button class="add-to-cart" data-name="Miso soup" data-image="./images/Miso soup.webp" data-price="450">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Onigiri" data-image="./images/Onigiri-23.jpg" data-price="550">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Udon" data-image="./images/Udon.jpg" data-price="500">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Ramen.webp" alt="Ramen">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 48g</p>
+                                <p>Carbohydrates: 111g</p>
+                                <p>Fats: 35g</p>
+                                <p>Calories: 954 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/TGHbePXG7Oo')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Tempura.jpg" alt="Tempura">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 27g</p>
+                                <p>Carbohydrates: 47g</p>
+                                <p>Fats: 16g</p>
+                                <p>Calories: 438 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/0pL1sWrFnZM')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/tonkastu.jpg" alt="Tonkatsu">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 37g</p>
+                                <p>Carbohydrates: 31g</p>
+                                <p>Fats: 22g</p>
+                                <p>Calories: 482 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/AtgqMOi2Ze4')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+            </tr>
+            <tr>
+                <td>Ramen</td>
+                <td>Tempura</td>
+                <td>Tonkatsu</td>
+            </tr>
+            <tr>
+                <td>799/-</td>
+                <td>880/-</td>
+                <td>950/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Ramen" data-image="./images/Ramen.webp" data-price="799">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Tempura" data-image="./images/Tempura.jpg" data-price="880">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Tonkatsu" data-image="./images/tonkastu.jpg" data-price="950">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Tamagoyaki.webp" alt="Tamagoyaki">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 7.4g</p>
+                                <p>Carbohydrates: 4.1g</p>
+                                <p>Fats: 6g</p>
+                                <p>Calories: 103 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/qLlLvhbivPs')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Gyoza.webp" alt="Gyoza">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 3.5g</p>
+                                <p>Carbohydrates: 7.4g</p>
+                                <p>Fats: 3.8g</p>
+                                <p>Calories: 79 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/z60_v7NhFck')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Takoyaki.jpg" alt="Takoyaki">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 3g</p>
+                                <p>Carbohydrates: 5.8g</p>
+                                <p>Fats: 2.5g</p>
+                                <p>Calories: 58 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/-d8nTfzxES8')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Tamagoyaki</td>
+                <td>Gyoza</td>
+                <td>Takoyaki</td>
+            </tr>
+            <tr>
+                <td>700/-</td>
+                <td>600/-</td>
+                <td>450/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Tamagoyaki" data-image="./images/Tamagoyaki.webp" data-price="700">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Gyoza" data-image="./images/Gyoza.webp" data-price="600">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Takoyaki" data-image="./images/Takoyaki.jpg" data-price="450">Add to cart</button></td>
+            </tr>
+        </table>
+    </div>
+    <!-- The Modal -->
+<div id="videoModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeVideoModal()">&times;</span>
+        <iframe id="videoPlayer" width="100%" height="400" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<script>
+    // Function to open the video modal
+    function openVideoModal(videoUrl) {
+        const modal = document.getElementById("videoModal");
+        const videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.src = videoUrl; // Set video source
+        modal.style.display = "block"; // Show modal
+    }
+
+    // Function to close the video modal
+    function closeVideoModal() {
+        const modal = document.getElementById("videoModal");
+        const videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.src = ""; // Reset video source
+        modal.style.display = "none"; // Hide modal
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById("videoModal");
+        if (event.target == modal) {
+            closeVideoModal();
+        }
+    }
+</script>
+
+    <script src="./cart.js"></script>
+</body>
+</html>

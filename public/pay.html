@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .payment-option {
+            margin: 20px 0;
+        }
+        .payment-option img {
+            max-width: 100%;
+            height: auto;
+        }
+        .pay-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff9800;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .pay-btn:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Complete Your Payment</h1>
+    <div class="payment-option">
+        <h2>Pay via UPI</h2>
+        <img src="upi-qr-code.png" alt="UPI QR Code">
+        <p>Cart Total: ₹</p>
+        <button class="pay-btn">Pay via UPI</button>
+    </div>
+
+    <div class="payment-option">
+        <h2>Pay via Net Banking</h2>
+        <button class="pay-btn">Proceed to Net Banking</button>
+    </div>
+</div>
+
+</body>
+</html>

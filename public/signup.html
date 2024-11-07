@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <title>Signup Page</title>
+</head>
+<body>
+    <div class="container">
+        <form id="signupForm">
+            <h2>Sign Up</h2>
+
+            <!-- Error message container -->
+            <div id="error-message" style="color: red; display: none;"></div>
+
+            <label for="name">Name</label>
+            <input type="text" id="names" class="input-style" placeholder="Enter your Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-style" placeholder="Enter your email">
+
+            <label for="mobilenumber">Mobile Number</label>
+            <input type="tel" id="mobile" class="input-style" placeholder="Enter your mobile number">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" class="input-style" placeholder="Enter your password">
+
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" class="input-style" placeholder="Confirm Password">
+
+            <div class="buttons">
+                <button type="submit" class="button">Sign Up</button>
+                <button type="reset" class="button">Reset</button>
+            </div>
+        </form>
+    </div>
+    <script src="./signup.js"></script>
+</body>
+</html>

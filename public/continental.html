@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continental Recipes</title>
+    <link rel="stylesheet" href="./continental.css"> 
+    
+</head>
+<body>
+    <nav class="top-navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./help.html">Help</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./account.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <h1>CONTINENTAL RECIPES</h1>
+    
+    <div class="popular">
+        <table>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Carbonara pasta.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 44g</p>
+                                <p>Carbohydrates: 133g</p>
+                                <p>Fats: 33g</p>
+                                <p>Calories: 1018 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/NqFi90p38N8')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/red sauce pasta.webp" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 20g</p>
+                                <p>Carbohydrates: 73g</p>
+                                <p>Fats: 15g</p>
+                                <p>Calories: 510 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/zSCTYKUeLQg')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Bucatini all.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 7.4g</p>
+                                <p>Carbohydrates: 42g</p>
+                                <p>Fats: 1g</p>
+                                <p>Calories: 210 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/y7ot3RqTcWM')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Carbonara pasta</td>
+                <td>Red Sauce pasta</td>
+                <td>BUCATINI ALL' AMATRICIANA</td>
+            </tr>
+            <tr>
+                <td>550/-</td>
+                <td>450/-</td>
+                <td>500/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Carbonara pasta" data-image="./images/Carbonara pasta.jpg" data-price="550">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Red Sauce pasta" data-image="./images/red sauce pasta.webp" data-price="450">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="BUCATINI ALL' AMATRICIANA" data-image="./images/Bucatini all.jpg" data-price="500">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/tomato goat cheese pasta.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 72g</p>
+                                <p>Carbohydrates: 162g</p>
+                                <p>Fats: 88g</p>
+                                <p>Calories: 1720 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/djv7aw2RNH8')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Creamy Four Cheese pasta recipe.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 26g</p>
+                                <p>Carbohydrates: 96g</p>
+                                <p>Fats: 42g</p>
+                                <p>Calories: 873 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/GoSOzpRlJ4g')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Fish-Pie-square-FS-39.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 42g</p>
+                                <p>Carbohydrates: 28g</p>
+                                <p>Fats: 28g</p>
+                                <p>Calories: 539 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/IY-KRIb1if4')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Tomato cheese pasta</td>
+                <td>Creamy four cheese pasta</td>
+                <td>Fish Pie</td>
+            </tr>
+            <tr>
+                <td>450/-</td>
+                <td>400/-</td>
+                <td>500/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Tomato cheese pasta" data-image="./images/tomato goat cheese pasta.jpg" data-price="450">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Creamy four cheese pasta" data-image="./images/Creamy Four Cheese pasta recipe.jpg" data-price="400">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Fish Pie" data-image="./images/Fish-Pie-square-FS-39.jpg" data-price="500">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Stuffed Jacket Potatoes.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 4.3g</p>
+                                <p>Carbohydrates: 37g</p>
+                                <p>Fats: 0.2g</p>
+                                <p>Calories: 161 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/JEgKKvyHboA')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Paneer Steak.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 15g</p>
+                                <p>Carbohydrates: 17g</p>
+                                <p>Fats: 27g</p>
+                                <p>Calories: 366 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/_2G0bdR7ZlU')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Chicken Pie.jpeg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 21g</p>
+                                <p>Carbohydrates: 80g</p>
+                                <p>Fats: 49g</p>
+                                <p>Calories: 851 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/XWarXtnk0VU')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Stuffed Jacket Potatoes</td>
+                <td>Grilled Harrisa Paneer</td>
+                <td>Chicken Pot Pie</td>
+            </tr>
+            <tr>
+                <td>350/-</td>
+                <td>300/-</td>
+                <td>400/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Stuffed Jacket Potatoes" data-image="./images/Stuffed Jacket Potatoes.jpg" data-price="350">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Grilled Harrisa Paneer" data-image="./images/Paneer Steak.jpg" data-price="300">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Chicken Pot Pie" data-image="./images/Chicken Pie.jpeg" data-price="400">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><h1>DESSERTS</h1></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/gulab jamun.webp" alt="Gulab Jamun Image">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 1.9g</p>
+                                <p>Carbohydrates: 20g</p>
+                                <p>Fats: 7.3g</p>
+                                <p>Calories: 150 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/QFvd7u_YjVk')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>            
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Key lime pie.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 8.4g</p>
+                                <p>Carbohydrates: 54g</p>
+                                <p>Fats: 22g</p>
+                                <p>Calories: 440 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/NkQham202lM')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Mooncakes.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 13g</p>
+                                <p>Carbohydrates: 50g</p>
+                                <p>Fats: 16g</p>
+                                <p>Calories: 394 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/p5kRLCyN4Zc')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+            </tr>
+            <tr>
+                <td>Gulab Jamun</td>
+                <td>Key lime pie</td>
+                <td>Mooncakes</td>
+            </tr>
+            <tr>
+                <td>350/-</td>
+                <td>400/-</td>
+                <td>300/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Gulab Jamun" data-image="./images/gulab jamun.webp" data-price="350">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Key lime pie" data-image="./images/Key lime pie.jpg" data-price="400">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Mooncakes" data-image="./images/Mooncakes.jpg" data-price="300">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Alfajores.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 3g</p>
+                                <p>Carbohydrates: 18g</p>
+                                <p>Fats: 2.6g</p>
+                                <p>Calories: 109 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/9MncGG2cH_g')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+   
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Mini Pavlova.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 3.5g</p>
+                                <p>Carbohydrates: 40g</p>
+                                <p>Fats: 11g</p>
+                                <p>Calories: 263 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/Zo5ATW4eq8o')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Japanese cheesecake.webp" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 6.9g</p>
+                                <p>Carbohydrates: 32g</p>
+                                <p>Fats: 28g</p>
+                                <p>Calories: 401 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/pmTo3fHK9uE')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+  
+            </tr>
+            <tr>
+                <td>Alfajores</td>
+                <td>Mini Pavlova</td>
+                <td>Japanese cheesecake</td>
+            </tr>
+            <tr>
+                <td>300/-</td>
+                <td>600/-</td>
+                <td>300/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Alfajores" data-image="./images/Alfajores.jpg" data-price="300">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Mini Pavlova" data-image="./images/Mini Pavlova.jpg" data-price="600">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Japanese cheesecake" data-image="./images/Japanese cheesecake.webp" data-price="300">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Tiramisù.webp" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 8.3g</p>
+                                <p>Carbohydrates: 35g</p>
+                                <p>Fats: 44g</p>
+                                <p>Calories: 572 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/87V4nizNJiE')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/Nanaimo bars.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 1.1g</p>
+                                <p>Carbohydrates: 19g</p>
+                                <p>Fats: 8.4g</p>
+                                <p>Calories: 152 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/QZqre68rxnk')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+ 
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front">
+                                <img src="./images/CREME CARAMEL.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <h2>Nutritional Info</h2>
+                                <p>Proteins: 6.9g</p>
+                                <p>Carbohydrates: 35g</p>
+                                <p>Fats: 6.2g</p>
+                                <p>Calories: 222 kcal</p>
+                                <button class="video-button" onclick="openVideoModal('https://www.youtube.com/embed/oL7F3h5joEE')">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Tiramisù</td>
+                <td>Nanaimo Bars</td>
+                <td>Creme Caramel</td>
+            </tr>
+            <tr>
+                <td>250/-</td>
+                <td>300/-</td>
+                <td>350/-</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart" data-name="Tiramisù" data-image="./images/Tiramisù.webp" data-price="250">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Nanaimo Bars" data-image="./images/Nanaimo bars.jpg" data-price="300">Add to cart</button></td>
+                <td><button class="add-to-cart" data-name="Creme Caramel" data-image="./images/CREME CARAMEL.jpg" data-price="350">Add to cart</button></td>
+            </tr>
+        </table>
+    </div>
+<!-- The Modal -->
+<div id="videoModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeVideoModal()">&times;</span>
+        <iframe id="videoPlayer" width="100%" height="400" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<script>
+    // Function to open the video modal
+    function openVideoModal(videoUrl) {
+        const modal = document.getElementById("videoModal");
+        const videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.src = videoUrl; // Set video source
+        modal.style.display = "block"; // Show modal
+    }
+
+    // Function to close the video modal
+    function closeVideoModal() {
+        const modal = document.getElementById("videoModal");
+        const videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.src = ""; // Reset video source
+        modal.style.display = "none"; // Hide modal
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById("videoModal");
+        if (event.target == modal) {
+            closeVideoModal();
+        }
+    }
+</script>
+
+    <script src="./cart.js"></script>
+</body>
+</html>
