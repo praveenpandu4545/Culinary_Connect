@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (response.ok) {
           const message = await response.text();
           alert(message); 
-          window.location.href='http://localhost:3000/home.html';
+          window.location.href='http://localhost:3000/index.html';
         } else {
           const errorText = await response.text();
           alert(errorText);
